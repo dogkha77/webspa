@@ -1,0 +1,167 @@
+.inner-page :is(.btn, .button),
+.live-work :is(.live-btn, .spa-transactions .btn),
+.invoice-body .live-btn {
+    min-height: 44px;
+    font-weight: 650;
+    letter-spacing: 0.01em;
+    box-shadow: 0 3px 9px rgb(30 55 36 / 12%);
+    transition: background-color 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.inner-page :is(.btn, .button):hover,
+.live-work :is(.live-btn, .spa-transactions .btn):hover,
+.invoice-body .live-btn:hover {
+    box-shadow: 0 5px 14px rgb(30 55 36 / 18%);
+    transform: translateY(-1px);
+}
+
+.inner-page :is(.btn, .button):active,
+.live-work :is(.live-btn, .spa-transactions .btn):active,
+.invoice-body .live-btn:active {
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.inner-page :is(.btn, .button):focus-visible,
+.live-work :is(.live-btn, .spa-transactions .btn):focus-visible,
+.invoice-body .live-btn:focus-visible {
+    outline: 3px solid #91ad87;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgb(145 173 135 / 22%);
+}
+
+.inner-page :is(.btn, .button):disabled,
+.live-work :is(.live-btn, .spa-transactions .btn):disabled,
+.invoice-body .live-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.58;
+    box-shadow: none;
+    transform: none;
+}
+
+.live-work .live-btn-soft {
+    border: 1px solid #a9c2ad;
+    box-shadow: none;
+}
+
+.live-work .live-search button {
+    min-height: 40px;
+    padding: 7px 14px;
+    border: 1px solid #425641;
+    border-radius: 999px;
+    background: #425641;
+    color: #fff;
+    font-weight: 650;
+    white-space: nowrap;
+    transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.live-work .live-search button:hover {
+    background: #304531;
+    box-shadow: 0 3px 9px rgb(30 55 36 / 18%);
+    transform: translateY(-1px);
+}
+
+.live-work .live-search button:focus-visible {
+    outline: 3px solid #91ad87;
+    outline-offset: 3px;
+}
+
+.live-work .live-sidebar-bottom form button {
+    min-height: 42px;
+    border: 1px solid #a9c2ad;
+    font-weight: 600;
+}
+
+.inner-page .btn-soft {
+    border-color: #a9c2ad;
+    box-shadow: none;
+}
+
+.inner-page .btn-white {
+    border-color: #b9cdbd;
+}
+
+.inner-page main a:not(.btn):not(.button) {
+    color: #36583b;
+    font-weight: 550;
+    text-decoration: underline;
+    text-decoration-color: #91ad87;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.inner-page main a:not(.btn):not(.button):hover {
+    color: #203c27;
+    text-decoration-thickness: 2px;
+}
+
+.package-page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 24px;
+}
+
+.live-work .live-card-heading > a,
+.live-work .live-subnav > a,
+.live-work .live-filters > a,
+.live-work .live-sidebar-bottom > a,
+.live-work .live-card p > a,
+.live-work .live-table td > a:not(.live-btn) {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border: 1px solid #a9c2ad;
+    border-radius: 999px;
+    background: #f6fff8;
+    color: #304531;
+    font-weight: 600;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.live-work .live-card-heading > a:hover,
+.live-work .live-subnav > a:hover,
+.live-work .live-filters > a:hover,
+.live-work .live-sidebar-bottom > a:hover,
+.live-work .live-card p > a:hover,
+.live-work .live-table td > a:not(.live-btn):hover {
+    background: #e2f4e7;
+    box-shadow: 0 3px 9px rgb(30 55 36 / 12%);
+    transform: translateY(-1px);
+}
+
+.live-work .live-card-heading > a:focus-visible,
+.live-work .live-subnav > a:focus-visible,
+.live-work .live-filters > a:focus-visible,
+.live-work .live-sidebar-bottom > a:focus-visible,
+.live-work .live-card p > a:focus-visible,
+.live-work .live-table td > a:not(.live-btn):focus-visible {
+    outline: 3px solid #91ad87;
+    outline-offset: 3px;
+}
+
+.live-work .live-card-heading > a.live-btn {
+    background: #425641;
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .inner-page :is(.btn, .button),
+    .live-work :is(.live-btn, .spa-transactions .btn),
+    .invoice-body .live-btn,
+    .live-work .live-search button,
+    .live-work .live-card-heading > a,
+    .live-work .live-subnav > a,
+    .live-work .live-filters > a,
+    .live-work .live-sidebar-bottom > a,
+    .live-work .live-card p > a,
+    .live-work .live-table td > a:not(.live-btn) {
+        transition: none;
+    }
+}

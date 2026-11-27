@@ -1,0 +1,5 @@
+@extends('layouts.spa')
+@section('title', 'Về An Nhiên Spa')
+@section('content')
+<section class="page-section"><div class="container"><span class="pill">THẢO MỘC & AN NHIÊN</span><h1>Một khoảng lặng để trở về với chính mình</h1><p class="intro-copy">An Nhiên dành không gian cho những trải nghiệm chăm sóc, thư giãn và sự đón tiếp tận tâm.</p><div class="package-banner"><div><span class="small-label">CHĂM SÓC THÂN TÂM</span><h2>Lắng nghe nhu cầu của bạn</h2><p>Khám phá danh mục dịch vụ hiện có và gửi thời gian mong muốn. Nhân viên sẽ kiểm tra khả năng phục vụ trước khi xác nhận lịch.</p><a class="btn" href="{{ route('dat-lich') }}">Đặt lịch trải nghiệm</a></div><img src="{{ asset('images/spa/space.jpg') }}" width="800" height="600" alt="Không gian thư giãn tại spa"></div><div class="live-stats"><article><span>Dịch vụ đang cung cấp</span><strong>{{ $soDichVu }}</strong></article><article><span>Nhân viên đang hoạt động</span><strong>{{ $soNhanVien }}</strong></article><article><span>Phòng đang hoạt động</span><strong>{{ $soPhong }}</strong></article></div></div></section>
+@endsection

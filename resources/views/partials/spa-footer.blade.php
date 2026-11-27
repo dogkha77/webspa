@@ -1,0 +1,6 @@
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand"><a class="brand" href="{{ route('trang-chu') }}"><x-spa-icon name="flower" size="28"/><span class="brand-text">An Nhiên Spa</span></a><p class="footer-motto">Dành một khoảng lặng để chăm sóc bản thân</p><p>Không gian an trú cho thân tâm, kết hợp tinh hoa thảo mộc bản địa và các liệu pháp thư giãn tự nhiên.</p></div>
+<div><h3>HỖ TRỢ ĐẶT LỊCH</h3><a class="footer-link" href="{{ route('lich-hen-cua-ban') }}">Xem lịch hẹn của tôi</a><a class="footer-link" href="{{ route('goi-cua-toi') }}">Xem gói của tôi</a></div>
+<div><h3>KHÁM PHÁ AN NHIÊN</h3><a class="footer-link" href="{{ route('dich-vu') }}">Dịch vụ chăm sóc</a><a class="footer-link" href="{{ route('goi-lieu-trinh') }}">Gói liệu trình</a><a class="footer-link" href="{{ route('ve-spa') }}">Câu chuyện của chúng tôi</a></div>
+<div class="footer-booking"><h3>Khởi đầu tĩnh tại</h3><p>Lựa chọn hành trình chăm sóc dành riêng cho bạn hôm nay.</p><a class="btn" href="{{ $bookingUrl }}">Đặt lịch hẹn ngay</a></div>
+</div><div class="footer-bottom"><span>© {{ date('Y') }} An Nhiên Spa. Mọi quyền được bảo lưu.</span><span>THIÊN NHIÊN · THẢO MỘC · AN NHIÊN</span></div></div></footer>
